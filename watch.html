@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novus Watch</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      body {
+        background-color: #a7a8cd;
+      }
+      .wrapper {
+        border-radius: 10px;
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 15px;
+        position: relative;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .wrapper .image-section img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+      }
+
+      .wrapper .bottom { 
+        margin-top: -5px;
+       }
+      .content {
+        margin: 0 auto;
+        max-width: 100%;
+        background-color: #ffff;
+        
+        padding-inline: 24px;
+        padding-bottom: 24px;
+        border-radius: 0px 0px 10px 10px;
+        height: 35%;
+
+        > h2 {
+          padding-bottom: 20px;
+          font-size: 2rem;
+        }
+      }
+
+      span {
+        font-size: 1rem;
+        color: #8e8989;
+      }
+
+      .header {
+        width: 100%;
+      }
+
+      .wrapper .header {
+        background-color: #f1d57f;
+        padding-inline: 5px;
+        padding-block: 7px;
+        width: max-content;
+        font-size: 1rem;
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        border-radius: 4px 20px 20px 4px;
+      }
+
+      @media (max-width: 768px) {
+        .wrapper{
+          width: 95%;
+          padding-inline: 10px;
+          padding-top: 20px;
+          position: relative;
+        }
+        .wrapper .header {
+          font-size: 0.6rem;
+          position: absolute;
+          top: 30px;  
+          left: 2px;
+      }
+      .content{
+        >h2{
+          font-size: 1rem;
+          padding-block-start: 6%;
+        }
+      }
+      span{
+        font-size: 0.6rem;
+      }
+      p{
+        font-size: 0.9rem;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="image-section">
+        <img src="./asset/images/prewatch.jpg" alt="Novus Watch" />
+      </div>
+
+      <div class="header">
+        <h1>New and Improved!</h1>
+      </div>
+
+      <div class="bottom">
+        <div class="content">
+          <h2>Novus Watch <span>Series IV</span></h2>
+          <p>
+            The pinnacle of fashion and tech, This wearable piece is an homage
+            to glided palaces and minimal regalia, combing nouveau-deco and
+            brutalism influences in a compact, Swiss-made watch.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

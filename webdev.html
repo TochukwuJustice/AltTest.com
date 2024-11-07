@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <style>
+      * {
+        background-color: #f7fdfc;
+        font-family: "Sofia Sans", sans-serif;
+        margin: 0;
+      }
+
+      .main-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        padding: 5% 8%;
+      }
+
+      .left-container {
+        text-align: left;
+        padding: 10% 30% 20% 10%;
+      }
+
+      img {
+        width: 25%;
+        margin-left: -2%;
+      }
+
+      h1 {
+        font-size: 3rem;
+        padding: 1.5rem 0;
+        font-weight: normal;
+      }
+
+      .left-container .desktop {
+        font-size: 1rem;
+        line-height: 1.4;
+        font-weight: 400;
+        color: #777;
+      }
+      .left-container #Mobile {
+        display: none;
+      }
+
+      .right-container {
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+        justify-content: left;
+        width: 100%;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        background-color: inherit;
+        border-radius: 0.5rem;
+      }
+
+      .form-group {
+        margin-bottom: 1.45rem;
+        flex: 1;
+        background-color: inherit;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 1.5rem;
+        background-color: inherit;
+      }
+
+      label {
+        font-size: 0.8rem;
+        color: #011c34;
+        margin-bottom: 0.5rem;
+        display: block;
+        font-weight: bold;
+        background-color: inherit;
+      }
+
+      input::placeholder {
+        font-size: 0.8rem;
+      }
+
+      input,
+      select {
+        padding: 1rem;
+        font-size: 0.8rem;
+        border: 1px solid #e8e8e8;
+        border-radius: 1px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: inherit;
+      }
+
+      input:focus,
+      select:focus {
+        outline: none;
+        border: 1px solid #00c4cc;
+      }
+
+      .reg-btn {
+        background-color: #00c4cc;
+        color: white;
+        border: none;
+        padding: 1rem;
+        font-size: 0.8rem;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .register-btn:hover {
+        background-color: #00b3b8;
+      }
+
+      #para {
+        font-size: 0.9rem;
+        color: black;
+        text-align: center;
+        margin-top: 15px;
+        font-weight: normal;
+      }
+
+      #para a {
+        color: #00c4cc;
+        text-decoration: none;
+      }
+
+      #para a:hover {
+        text-decoration: underline;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* Media Query for Mobile Phone */
+
+      @media (max-width: 768px) {
+        .main-container {
+          display: block;
+          padding: 2% 4%;
+          margin-bottom: 20%;
+        }
+
+        img {
+          width: 28%;
+        }
+
+        h1 {
+          font-size: 2rem;
+          padding: 1rem 0;
+        }
+
+        .left-container {
+          padding: 10% 0% 10% 0%;
+        }
+
+        .right-container {
+          width: 100%;
+        }
+
+        form {
+          padding: 5% 4%;
+        }
+
+        .form-row {
+          display: block;
+        }
+
+        .left-container .desktop {
+          display: none;
+        }
+        .left-container #Mobile {
+          display: flex;
+          font-size: 0.8rem;
+          line-height: 1.3;
+          color: #777;
+        }
+        #para{
+          font-size: 0.6rem;
+         
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="left-container">
+        <figure>
+          <img
+            src="./asset/images/Logo.png"
+            alt="Logo icon"
+            width="100px"
+            height="100px"
+          />
+        </figure>
+        <h1>For Individuals</h1>
+        <p class="desktop">
+          Start benefitting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
+        </p>
+
+        <p id="Mobile">
+          Inspiring wholesome harmony for the mind, body and spirit, for
+          everyone, everywhere.
+        </p>
+      </div>
+
+      <div class="right-container">
+        <form action="#">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="FirstName">First Name</label>
+              <input
+                id="firstname"
+                type="text"
+                placeholder="Enter First Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="LastName">Last Name</label>
+              <input
+                id="lastname"
+                type="text"
+                placeholder="Enter Last Name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select>
+                <option>Select here</option>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date-of-birth">Date Of Birth</label>
+              <input id="date-of-birth" type="date" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="weight">Weight (KG)</label>
+              <input id="weight" type="text" placeholder="Enter Weight" />
+            </div>
+            <div class="form-group">
+              <label id="height">Height (CM)</label>
+              <input
+                id="height"
+                type="text"
+                placeholder="Enter Height here..."
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label id="activity">Activity Level</label>
+            <select id="activity">
+              <option>Select Here</option>
+              <option>Cool</option>
+              <option>Cooler</option>
+              <option>Coolest</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label id="password">Password</label>
+            <input id="password" type="password" placeholder="Enter Password" />
+          </div>
+          <button class="reg-btn" type="submit">Register</button>
+          <p id="para">
+            By clicking Register, you agree to our
+            <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
