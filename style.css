@@ -68,13 +68,13 @@ p {
   .main h1 {
     font-size: 1.2rem;
     font-weight: bold;
-    height: 40px;
+    height: 45px;
     max-width: 70%;
   }
 
   p {
-    padding: 6%;
-    margin-top: 40px;
+    padding: 4%;
+    margin-top:10px;
     font-size: 0.9rem;
     font-weight: bold;
     text-align: start;
